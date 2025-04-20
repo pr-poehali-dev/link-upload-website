@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpenIcon, LinkIcon, GraduationCapIcon, BookmarkIcon } from "lucide-react";
+import { BookOpenIcon, LinkIcon, GraduationCapIcon, BookmarkIcon, BrainIcon, SparklesIcon } from "lucide-react";
 
 const Index = () => {
   return (
@@ -28,9 +28,9 @@ const Index = () => {
 
       <main className="container mx-auto py-12 px-4">
         <section className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Организуйте свои школьные ресурсы</h2>
+          <h2 className="text-4xl font-bold mb-4">Сборник нейросетей для учителей и учеников</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Удобный способ хранить все важные школьные ссылки в одном месте. Больше никаких потерянных ресурсов!
+            Удобный способ хранить все важные школьные ресурсы и ИИ-инструменты в одном месте. Больше никаких потерянных ссылок!
           </p>
         </section>
 
@@ -68,15 +68,15 @@ const Index = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center">
-                <BookmarkIcon className="h-5 w-5 mr-2 text-primary" />
-                Дополнительные ресурсы
+                <SparklesIcon className="h-5 w-5 mr-2 text-primary" />
+                ИИ-инструменты
               </CardTitle>
               <CardDescription>
-                Сайты для подготовки к экзаменам и олимпиадам
+                Нейросети для обучения и подготовки к экзаменам
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Не потеряйте полезные ресурсы для подготовки к ОГЭ, ЕГЭ, олимпиадам и другим важным испытаниям.</p>
+              <p>Собирайте полезные нейросети для создания материалов, проверки знаний и эффективной подготовки к занятиям.</p>
             </CardContent>
           </Card>
         </section>
