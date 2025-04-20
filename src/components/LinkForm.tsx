@@ -4,11 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LinkIcon, Plus } from "lucide-react";
 
-type LinkFormProps = {
+interface LinkFormProps {
   onAddLink: (title: string, url: string) => void;
-};
+}
 
-const LinkForm: React.FC<LinkFormProps> = ({ onAddLink }) => {
+export const LinkForm: React.FC<LinkFormProps> = ({ onAddLink }) => {
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -44,10 +44,10 @@ const LinkForm: React.FC<LinkFormProps> = ({ onAddLink }) => {
   };
 
   return (
-    <Card className="w-full max-w-xl">
+    <Card className="w-full">
       <CardHeader>
         <CardTitle className="text-xl font-semibold flex items-center">
-          <LinkIcon className="mr-2" />
+          <LinkIcon className="mr-2 h-5 w-5" />
           Добавить новую ссылку
         </CardTitle>
       </CardHeader>

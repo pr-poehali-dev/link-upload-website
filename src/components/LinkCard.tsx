@@ -9,7 +9,7 @@ interface LinkCardProps {
   onDelete: (id: string) => void;
 }
 
-const LinkCard: React.FC<LinkCardProps> = ({ link, onDelete }) => {
+export const LinkCard: React.FC<LinkCardProps> = ({ link, onDelete }) => {
   // Извлекаем домен из URL для отображения фавиконки
   const getDomain = (url: string) => {
     try {
